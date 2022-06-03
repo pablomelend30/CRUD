@@ -16,36 +16,37 @@
                 <div class="container mt-4">
 
                     <div class="col-sm-6">
-                        <form th:action="@{/save}" th:object=${persona} method="POST">
+                        <form th:action="@{/eliminar}" th:object=${persona} method="POST">
                             <div class="card">
                                 <div class="card-header">
-                                    <h3>Agregar Persona</h3>
+                                    <h3>Eliminar Persona</h3>
                                 </div>
 
 
                                 <div class="card-body">
-<!--                                    <div class="form-group">
+                                    <div class="form-group">
                                         <lavel>ID</lavel>
                                         <input th:field="*{id}" type="text" class="form-control" readonly="readonly"/>
-                                    </div>-->
+                                    </div>
 
                                     <div class="form-group">
                                         <lavel>NOMBRES</lavel>
-                                        <input th:field="*{name}" type="text" class="form-control" />
+                                        <input th:field="*{name}" type="text" class="form-control" readonly="readonly"/>
                                     </div>
 
                                     <div class="form-group">
                                         <lavel>APELLIDOS</lavel>
-                                        <input th:field="*{apellido}" type="text" class="form-control" />
+                                        <input th:field="*{apellido}" type="text" class="form-control" readonly="readonly">
                                     </div>
 
                                     <div class="form-group">
                                         <lavel>TELEFONO</lavel>
-                                        <input th:field="*{telefono}" type="text" class="form-control" />
+                                        <input th:field="*{telefono}" type="text" class="form-control" readonly="readonly"/>
                                     </div>
+                                    
 
                                     <div class="card-footer">
-                                        <input type="submit" value="Guardar" class="btn btn-success">
+                                        <input type="submit" value="Eliminar" class="btn btn-danger">
                                     </div>
 
 
